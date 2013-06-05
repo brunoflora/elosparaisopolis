@@ -1,0 +1,408 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+body { font-family: 'ProximaNovaRegular', Helvetica, Arial, sans-serif; }
+
+header { background: #fff; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.10); overflow: hidden; padding: 20px 0px; z-index: 9;}
+
+a:hover { text-decoration: none; color: #9e0c3f; }
+
+.logo { background-image: url(../img/logo_210_63.png); width: 210px; height: 63px; display: inline-block; }
+
+nav { margin: 30px 0;}
+nav li { display: inline-block; margin-left: 20px; }
+nav li a {  color: #ed1260; font: 16px 'ProximaNovaBold'; }
+
+.video { background: url(../img/videopreload_1600_453.jpg) center no-repeat; height: 453px; }
+.video .play { 
+    background: url(../img/videoicon_222_228.png) center no-repeat; 
+    width: 222px; 
+    height: 228px; 
+    margin: 0 auto; 
+    display: block;
+    padding: 100px 0; 
+}
+
+section { padding-top: 50px; }
+
+.title { font: 30px 'ProximaNovaBold'; color: #ed1260; letter-spacing: -1px; margin-bottom: 50px; }
+.subtitle { font-size: 18px; color: #515151; font-weight: 400; }
+.quote { font: 48px 'ProximaNovaRegular'; font-style: italic;  text-align: center;}
+
+.how .box { 
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px; 
+    margin-bottom: 20px;
+}
+.how .head { 
+    background-color: #71bf44;
+    height: 110px; 
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0; 
+}
+.head.picon { background: #71bf44 url(../img/iconbg1_135_105.png) no-repeat center; }
+.head .iconproject { 
+    width: 64px; 
+    height: 50px; 
+    background: url(../img/icon1_64_50.png) no-repeat center; 
+    margin: 0px auto;
+    display: block;
+    padding-top: 60px;
+}
+
+
+.head.iicon { background: #71bf44 url(../img/iconbg2_112_105.png) no-repeat center; }
+.head .iconidea { 
+    width: 64px; 
+    height: 50px; 
+    background: url(../img/icon2_65_61.png) no-repeat center; 
+    margin: 0px auto;
+    display: block;
+    padding-top: 60px;
+}
+
+.head.sicon { background: #71bf44 url(../img/iconbg3_100_100.png) no-repeat center; }
+.head .iconshare { 
+    width: 64px; 
+    height: 50px; 
+    background: url(../img/icon2_65_65.png) no-repeat center; 
+    margin: 0px auto;
+    display: block;
+    padding-top: 60px;
+}
+
+.how .txt { padding: 20px 30px; }
+.how p { font-size: 13px; color: #4b4b4b; }
+.btnelo { 
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: #ed125f;
+    display: block;
+    padding: 8px 0;
+    color: #fff;
+    font-size: 14px;    
+}
+
+.livemap #map_canvas { height: 350px; margin: 10px -4% 0px -4%; }
+.livemap .searchinput {
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    background: #71bf44;
+    padding: 20px;
+    font-size: 35px;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.livemap .searchinput[placeholder]::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+.livemap .searchinput[placeholder]::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+}
+.livemap .searchinput[placeholder]::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+}
+.livemap .searchinput[placeholder]::-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+
+.projectbox:first-child { margin-left: 0;}
+
+.projectbox {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.projectbox .phead { height: 110px; overflow: hidden; }
+.projectbox .pcontent { padding: 20px; font-size: 12px; color: #515151; }
+.projectbox .ptitle { font-size: 14px 'ProximaNovaBold'; font-weight: 100; letter-spacing: -1px; }
+
+.insta { background: url(../img/instagram.png) top right no-repeat;}
+#instafeed img { width: 167px; max-width: 100%; }
+
+.about { background: #fff url(../img/videoiconbg.png) no-repeat left top; }
+.aboutw p { font-size: 13px; color: #4b4b4b; }
+.who .whopic { display: inline-block; max-width: 220px; }
+.who .sharelinks { position: relative; }
+.who .sharelinks ul { 
+    list-style: none; 
+    background: rgba(255, 255, 255, 0.95);
+    margin-bottom: -45px;
+    z-index: 9;
+    padding: 5px;
+}
+.who .sharelinks li { display: inline-block; padding-top: 5px;
+margin-left: 20px; }
+
+
+.who .sharelinks .ficon { 
+    background: url(../img/ficon_10_19.png) no-repeat; 
+    width: 10px; 
+    height: 19px; 
+    display: block;
+    margin-left: 10px;  
+}
+.who .sharelinks .gicon {
+    background: url(../img/gicon_21_19.png) center no-repeat; 
+    width: 21px; 
+    height: 19px; 
+    display: block;
+}
+.who .sharelinks .instagramicon {
+    background: url(../img/instaicon_20_19.png) center no-repeat; 
+    width: 20px; 
+    height: 19px; 
+    display: block;
+}
+.who .sharelinks .ticon {
+    background: url(../img/ticon_20_17.png) center no-repeat; 
+    width: 20px; 
+    height: 17px; 
+    display: block;
+}
+
+.reveal-modal.medium        { width: 320px; margin-left: -200px; z-index: 9999; background: #fff url(../img/videoiconbg.png) no-repeat left top;}
+.reveal-modal .signinbar { margin: -20px -20px 20px -20px; height:10px; padding: 20px; background: #FBFBFB; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIyJSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmViZWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#FBFBFB), color-stop(100%,#EBEBEB)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#ebebeb',GradientType=0 ); -webkit-border-radius: 10px 10px 0px 0px; border-radius: 10px 10px 0px 0px; border-bottom: 1px solid #D9D4D4;}
+.reveal-modal .signinbar .signintitle { font-size: 15px; font-weight: normal; margin: 0; line-height: 13px; color: #ed125f;}
+.reveal-modal .signinsubtitle, .signinwrap .signinsubtitle  { font-size: 13px; font-weight: normal; text-align: center; }
+.reveal-modal.medium .btn-large, .signinwrap .btn-large { width: 258px; text-align:left; margin: 10px 0px 30px 0px; padding: 10px 20px;}
+.reveal-modal.medium .btn-success, .signinwrap .btn-success { text-align: center; width: 200px; margin: 10px 50px 0 50px; }
+.signinmodalwrap input[type="text"], .signinmodalwrap textarea, .signinwrap input[type="text"], .signinwrap input[type="password"] {
+padding: 10px;
+width: 278px;
+margin-top: 20px;
+font-size: 15px;
+}
+.signinmodalwrap textarea {
+    width: 278px !important;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+.clearfix {
+    *zoom: 1;
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

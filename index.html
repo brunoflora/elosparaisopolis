@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Projeto Elos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/fonts/proximanova-fonts.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body onload="initialize()">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <div class="container">
+                <h1 class="ir logo animated">Projeto Elos</h1>
+                <nav class="pull-right">
+                    <ul>
+                        <li><a href="#" >SOBRE</a></li>
+                        <li><a href="#" >COMO FUNCIONA</a></li>
+                        <li><a href="#" >MAPA DA REGIÃO</a></li>
+                        <li><a href="#" >MOSTRE A SUA REALIDADE</a></li>
+                        <li><a href="#" >QUEM SOMOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="video">
+            <i class="play animated flipInX"></i>
+        </div>
+
+        <div class="container">
+
+            <section class="about">
+                <h2 class="title">SOBRE O ELOS</h2>
+                <h3 class="quote">“Colabore, incentive e dê visibilidade ao seu projeto na comunidade de Paraisópolis!”</h3>
+            </section>
+
+            <section class="how">
+                <h2 class="title">COMO FUNCIONA</h2>
+                <div class="row">
+                    <div class="box span4">
+                        <div class="head picon">
+                            <a href="#">
+                                <i class="iconproject"></i>
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <p>Gostaria de enviar a ideia de um projeto para a organização de moradores de Paraisópolis.</p>
+                            <a href="#" class="btnelo" data-reveal-id="myModal">Tenho um projeto</a>
+                        </div>
+                    </div>
+                    <div class="box span4">
+                        <div class="head iicon">
+                             <a href="#">
+                                <i class="iconidea"></i>
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <p>Quero apoiar financeiramente ou participar de um projeto.</p>
+                            <a href="#" class="btnelo">Quero incentivar</a>
+                        </div>
+                    </div>
+                    <div class="box span4">
+                        <div class="head sicon">
+                            <a href="#">
+                                <i class="iconshare"></i>
+                            </a>
+                        </div>
+                        <div class="txt">
+                            <p>Quero divulgar um projeto na comunidade de Paraisópolis.</p>
+                            <a href="#" class="btnelo">Quero compartilhar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="livemap">
+                <h2 class="title">MAPA DA REGIÃO</h2>
+                <div id="map_canvas"></div>
+                <div class="row">
+                    <input type="search" class="span12 searchinput" placeholder="ENCONTRE PROJETOS..." ng-model="searchText">
+                </div>
+            </section>
+
+            <section class="projects">
+                
+            <div class="comments-wrapper" ng-controller="ProjectsController">
+
+                <div id="myModal" class="reveal-modal medium">
+                    <div class="signinbar">
+                        <h1 class="signintitle">Adicionar projeto</h1>
+                    </div>
+                    <div class="signinmodalwrap">
+                        <form class="form-inline" name="formItem">
+                            <h5 class="signinsubtitle">Cadastre o seu projeto para fazer parte e conribuir para o crescimento da comunidade.</h5>
+                            <input type="text" placeholder="Nome do projeto" ng-model="project.nome" class="span6">
+                            <input type="text" placeholder="Responsável" ng-model="project.author" class="span6">
+                            <input type="text" placeholder="Contato" ng-model="project.contact" class="span6">
+                            <textarea type="text" placeholder="Descrição" ng-model="project.desc" class="span6"></textarea>
+                            <button tabindex="3" class="btn btn-success btn-large" ng-click="adicionaItem()">Adicionar</button>
+                        </form>
+                    </div>
+                    <a class="close-reveal-modal">×</a>
+                </div>
+
+                <div class="row">
+                    <div class="projectbox span3" ng-repeat="project in projects | filter:searchText">
+                        <div class="phead">
+                           <img src="img/orquestra_600_300.jpg" alt="Orquestra de Paraisópolis">
+                        </div>
+                        <div class="pcontent">
+                            <h4 class="ptitle">{{ project.nome }}</h4>
+                            <p class="author">por {{ project.author }}</p>
+                            <p>{{ project.contact }}</p>
+                            <p>{{ project.desc }}</p>
+                            <div class="sharebar"></div>
+                            <a href="#" class="btnelo">CRIAR ELO</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+                
+            </section>
+
+            <section class="insta">
+                <h2 class="title">MOSTRE A SUA REALIDADE </h2>
+                <p class="subtitle">Utilize a hashtag #elosparaisopolis para postar as fotos dos projetos que você participa ou visitou.</p>
+                <hr>
+                <div id="instafeed"></div>
+            </section>
+
+            <section class="aboutw">
+                <div class="row">
+                    <div class="who span7">
+                        <h2 class="title">QUEM SOMOS</h2>
+                        <div class="whopic">
+                            <div class="sharelinks">
+                                <ul>
+                                    <li><a href="#" class="ficon"></a></li>
+                                    <li><a href="#" class="gicon"></a></li>
+                                    <li><a href="#" class="instagramicon"></a></li>
+                                    <li><a href="#" class="ticon"></a></li>
+                                </ul>
+                            </div>
+                            <img src="img/bpic_222_222.jpg" alt="Bruno Flora">
+                            <h4>BRUNO FLORA</h4>
+                        </div>
+                        <div class="whopic">
+                            <div class="sharelinks">
+                                <ul>
+                                    <li><a href="#" class="ficon"></a></li>
+                                    <li><a href="#" class="gicon"></a></li>
+                                    <li><a href="#" class="instagramicon"></a></li>
+                                    <li><a href="#" class="ticon"></a></li>
+                                </ul>
+                            </div>
+                            <img src="img/jpic_222_222.jpg" alt="Junior Magalhães">
+                            <h4>JUNIOR MAGALHÃES</h4>
+                        </div>
+                        <div class="whopic">
+                            <div class="sharelinks">
+                                <ul>
+                                    <li><a href="#" class="ficon"></a></li>
+                                    <li><a href="#" class="gicon"></a></li>
+                                    <li><a href="#" class="instagramicon"></a></li>
+                                    <li><a href="#" class="ticon"></a></li>
+                                </ul>
+                            </div>
+                            <img src="img/zpic_222_222.jpg" alt="José Carlos">
+                            <h4>JOSÉ CARLOS</h4>
+                        </div>
+                    </div>
+                    <div class="aboutw span5">
+                        <h2 class="title">IDEALIZAÇÃO</h2>
+                        <p>Através de pesquisas realizadas na região, nós, estudantes do curso de Bacharelado em Design Digital do Centro Universitário Senac, São Paulo, dentro do Projeto Informar, criamos o projeto Elos.</p>
+                        <p>Este, nasceu com o intuito de colaborar com a comunidade de Paraisópolis na divulgação e incentivo aos projetos sociais desenvolvidos pelas instituições dentro da comunidade, dando visibilidade e possibilidade de buscar parceiros e colaboradores, gerando um ciclo colaborativo entre a comunidade, os bairros vizinhos e a cidade como um todo.</p>
+                        <p><b>APOIO</b></p>
+                        <p>Agradecemos o apoio dos professores de projeto do Centro Universitário Senac - Beatriz Pacheco, Eduardo Braga e demais mestres do curso de Design Digital e também do vice-presidente da União dos Moradores e do Comércio de Paraisópolis, Joildo Santos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Company 2012</p>
+            </footer>
+
+        </div> <!-- /container -->
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?sensor=true&region=BR"></script>
+        
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.reveal.js" type="text/javascript"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
