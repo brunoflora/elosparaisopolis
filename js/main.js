@@ -72,7 +72,7 @@ var feed = new Instafeed({
         get: 'tagged',
         tagName: 'favela',
         clientId: 'f5fdd1f6668d47c9801fe2127e8ef36a',
-        limit: '25'
+        limit: '23'
     });
     feed.run();
 
@@ -80,7 +80,10 @@ var feed = new Instafeed({
 
 function ProjectsController($scope) {
     $scope.projects = [
-        {nome: 'Projeto Balé', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'}
+        {nome: 'Projeto Balé', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'},
+        {nome: 'Projeto Zica', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'},
+        {nome: 'Projeto Dahr', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'}
+
     ];
 
     $scope.adicionaItem = function () {
@@ -93,3 +96,7 @@ function ProjectsController($scope) {
         });
     };
 }
+
+$('button').click(function() {
+  $('#myModal').trigger('reveal:close');
+})

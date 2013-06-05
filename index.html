@@ -23,16 +23,16 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
+        <header class="navbar navbar-fixed-top">
             <div class="container">
                 <h1 class="ir logo animated">Projeto Elos</h1>
                 <nav class="pull-right">
                     <ul>
-                        <li><a href="#" >SOBRE</a></li>
-                        <li><a href="#" >COMO FUNCIONA</a></li>
-                        <li><a href="#" >MAPA DA REGIÃO</a></li>
-                        <li><a href="#" >MOSTRE A SUA REALIDADE</a></li>
-                        <li><a href="#" >QUEM SOMOS</a></li>
+                        <li><a href="#aboutp" >SOBRE</a></li>
+                        <li><a href="#howitworks" >COMO FUNCIONA</a></li>
+                        <li><a href="#map" >MAPA DA REGIÃO</a></li>
+                        <li><a href="#pics" >MOSTRE A SUA REALIDADE</a></li>
+                        <li><a href="#whoa" >QUEM SOMOS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,14 +42,14 @@
             <i class="play animated flipInX"></i>
         </div>
 
-        <div class="container">
+        <div class="container" id="aboutp"> 
 
-            <section class="about">
+            <section class="about" >
                 <h2 class="title">SOBRE O ELOS</h2>
                 <h3 class="quote">“Colabore, incentive e dê visibilidade ao seu projeto na comunidade de Paraisópolis!”</h3>
             </section>
 
-            <section class="how">
+            <section class="how" id="howitworks">
                 <h2 class="title">COMO FUNCIONA</h2>
                 <div class="row">
                     <div class="box span4">
@@ -88,7 +88,7 @@
                 </div>
             </section>
 
-            <section class="livemap">
+            <section class="livemap" id="map">
                 <h2 class="title">MAPA DA REGIÃO</h2>
                 <div id="map_canvas"></div>
                 <div class="row">
@@ -136,14 +136,14 @@
                 
             </section>
 
-            <section class="insta">
+            <section class="insta" id="pics">
                 <h2 class="title">MOSTRE A SUA REALIDADE </h2>
                 <p class="subtitle">Utilize a hashtag #elosparaisopolis para postar as fotos dos projetos que você participa ou visitou.</p>
                 <hr>
                 <div id="instafeed"></div>
             </section>
 
-            <section class="aboutw">
+            <section class="aboutw" id="whoa">
                 <div class="row">
                     <div class="who span7">
                         <h2 class="title">QUEM SOMOS</h2>
@@ -222,5 +222,30 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+        <script type="text/javascript">// <![CDATA[
+        $(document).ready(function() {
+        function filterPath(string) {
+        return string
+        .replace(/^\//,'')
+        .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+        .replace(/\/$/,'');
+        }
+        $('a[href*=#]').each(function() {
+        if ( filterPath(location.pathname) == filterPath(this.pathname)
+        && location.hostname == this.hostname
+        && this.hash.replace(/#/,'') ) {
+        var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+        if ($target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function() {
+        $('html, body').animate({scrollTop: targetOffset}, 300);
+        return false;
+        });
+        }
+        }
+        });
+        });
+        // ]]></script>
     </body>
 </html>

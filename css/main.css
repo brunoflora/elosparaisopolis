@@ -87,7 +87,14 @@ nav { margin: 30px 0;}
 nav li { display: inline-block; margin-left: 20px; }
 nav li a {  color: #ed1260; font: 16px 'ProximaNovaBold'; }
 
-.video { background: url(../img/videopreload_1600_453.jpg) center no-repeat; height: 453px; }
+.video { background: url(../img/videopreload_1600_453.jpg) no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  height: 453px; 
+  margin-top: 66px;
+}
 .video .play { 
     background: url(../img/videoicon_222_228.png) center no-repeat; 
     width: 222px; 
@@ -97,7 +104,7 @@ nav li a {  color: #ed1260; font: 16px 'ProximaNovaBold'; }
     padding: 100px 0; 
 }
 
-section { padding-top: 50px; }
+section { padding-top: 170px; }
 
 .title { font: 30px 'ProximaNovaBold'; color: #ed1260; letter-spacing: -1px; margin-bottom: 50px; }
 .subtitle { font-size: 18px; color: #515151; font-weight: 400; }
@@ -194,6 +201,8 @@ section { padding-top: 50px; }
     color:    #fff;
 }
 
+
+.projects { padding-top: 20px;}
 .projectbox:first-child { margin-left: 0;}
 
 .projectbox {
@@ -210,6 +219,7 @@ section { padding-top: 50px; }
 .projectbox .ptitle { font-size: 14px 'ProximaNovaBold'; font-weight: 100; letter-spacing: -1px; }
 
 .insta { background: url(../img/instagram.png) top right no-repeat;}
+#instafeed { min-height: 500px; }
 #instafeed img { width: 167px; max-width: 100%; }
 
 .about { background: #fff url(../img/videoiconbg.png) no-repeat left top; }
