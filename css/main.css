@@ -179,7 +179,7 @@ section { padding-top: 170px; }
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -o-border-radius: 0;
-    background: #71bf44;
+    background: #71bf44 url(../img/lupa.png) no-repeat left top;
     padding: 20px;
     font-size: 35px;
     color: #fff;
