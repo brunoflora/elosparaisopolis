@@ -33,18 +33,13 @@ var map = new google.maps.Map(document.getElementById("map_canvas"),
     mapOptions);
 
 var image = 'img/place.png';
+var projectspin = 'img/pin_25_30.png';
 
 var marker = new google.maps.Marker({
     position: map.getCenter(),
     map: map,
     icon: image,
-    title: 'Click para dar zoom'
-  });
-
-var marker = new google.maps.Marker({
-    position: google.maps.LatLng(-22.551483,-45.78283),
-    map: map,
-    title: 'Click para dar zoom ESSE EH O 2'
+    title: 'Paraisópolis'
   });
 
 var markers = [
@@ -57,7 +52,8 @@ var infowindow = new google.maps.InfoWindow(), marker, i;
 for (i = 0; i < markers.length; i++) {  
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(markers[i][1], markers[i][2]),
-        map: map
+        map: map,
+        icon: projectspin,
     });
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
