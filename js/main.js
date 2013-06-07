@@ -103,9 +103,9 @@ var feed = new Instafeed({
 function ProjectsController($scope) {
     $scope.projects = [
         {
-          nome: 'Projeto Balé',
-          author: 'Joildo Santos',
-          contact: '(11) 9999-9999',
+          nome: 'Projeto Balé', 
+          author: 'Joildo Santos', 
+          contact: '(11) 9999-9999', 
           desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'
         },
     ];
