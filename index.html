@@ -127,7 +127,7 @@
                 <div class="row">
                     <div class="projectbox span3" ng-repeat="project in projects | filter:searchText">
                         <div class="phead" style="width: 200px; height: 150px;">
-                           <img id="thumbnail" class="glow" ng-src="{img/project.img}" style="width: 200px; height: 150px;"></img>
+                           <img id="thumbnail" class="glow" ng-src="{{project.img}}" style="width: 200px; height: 150px;"></img>
                         </div>
                         <div class="pcontent">
                             <h4 class="ptitle">{{ project.nome }}</h4>
@@ -139,7 +139,7 @@
                                     </a>
                                     <a href="#kudo" class="count">
                                         <span class="num">45</span>
-                                        <span class="txt">Elos</span>
+                                        <span class="txt">Elos</spans>
                                     </a>
                                 </figure>
                             </div>
