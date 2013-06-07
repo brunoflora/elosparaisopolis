@@ -107,13 +107,6 @@
                     <div class="signinmodalwrap">
                         <form class="form-inline" name="formItem">
                             <h5 class="signinsubtitle">Cadastre o seu projeto para fazer parte e conribuir para o crescimento da comunidade.</h5>
-                            <div class="fileupload fileupload-new" data-provides="fileupload">
-                            <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;" ng-model="project.img"></div>
-                            <div>
-                            <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
-                            <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-                            </div>
-                            </div>
                             <input type="text" placeholder="Nome do projeto" ng-model="project.nome" class="span6">
                             <input type="text" placeholder="Responsável" ng-model="project.author" class="span6">
                             <input type="text" placeholder="Contato" ng-model="project.contact" class="span6">
@@ -126,8 +119,8 @@
 
                 <div class="row">
                     <div class="projectbox span3" ng-repeat="project in projects | filter:searchText">
-                        <div class="phead" style="width: 200px; height: 150px;">
-                           <img id="thumbnail" class="glow" ng-src="{img/project.img}" style="width: 200px; height: 150px;"></img>
+                        <div class="phead">
+                           <img src="img/orquestra_600_300.jpg" alt="Orquestra de Paraisópolis">
                         </div>
                         <div class="pcontent">
                             <h4 class="ptitle">{{ project.nome }}</h4>
