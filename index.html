@@ -59,7 +59,7 @@
                             </a>
                         </div>
                         <div class="txt">
-                            <p>Tem uma ideia de projeto para a organização de moradores de Paraisópolis?</p>
+                            <p>Gostaria de enviar a ideia de um projeto para a organização de moradores de Paraisópolis.</p>
                             <a href="#" class="btnelo" data-reveal-id="myModal">Tenho um projeto</a>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                             </a>
                         </div>
                         <div class="txt">
-                            <p>Quer apoiar financeiramente ou participar de um projeto?</p>
+                            <p>Quero apoiar financeiramente ou participar de um projeto.</p>
                             <a href="#" class="btnelo">Quero incentivar</a>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                             </a>
                         </div>
                         <div class="txt">
-                            <p>Quer divulgar um projeto na comunidade de Paraisópolis?</p>
+                            <p>Quero divulgar um projeto na comunidade de Paraisópolis.</p>
                             <a href="#" class="btnelo">Quero compartilhar</a>
                         </div>
                     </div>
@@ -124,35 +124,12 @@
                         </div>
                         <div class="pcontent">
                             <h4 class="ptitle">{{ project.nome }}</h4>
+                            <p class="author">por {{ project.author }}</p>
+                            <p>{{ project.contact }}</p>
                             <p>{{ project.desc }}</p>
-                            <div class="sharebar">
-                                <figure class="kudo kudoable" data-id="1">
-                                    <a class="kudobject">
-                                        <div class="opening"><div class="circle">&nbsp;</div></div>
-                                    </a>
-                                    <a href="#kudo" class="count">
-                                        <span class="num">45</span>
-                                        <span class="txt">Elos</span>
-                                    </a>
-                                </figure>
-                            </div>
-                            <a href="#" class="btnelo" data-reveal-id="projectModal">ENTRAR EM CONTATO</a>
+                            <div class="sharebar"></div>
+                            <a href="#" class="btnelo">CRIAR ELO</a>
                         </div> 
-                        <div id="projectModal" class="reveal-modal medium">
-                            <div class="signinbar">
-                                <h4 class="signintitle">{{ project.nome }}</h4>
-                            </div>
-                            <div class="signinmodalwrap">
-                                <div class="phead">
-                                    <img src="img/orquestra_600_300.jpg" alt="Orquestra de Paraisópolis">
-                                </div>
-                                    <p>Para incentivar ou ajudar esse projeto a crescer entre em contato!</p>
-                                    <p class="author">Responsável: {{ project.author }}</p>
-                                    <p>{{ project.contact }}</p>
-                                    <div class="sharebar"></div>
-                            </div>
-                            <a class="close-reveal-modal">×</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -225,8 +202,6 @@
 
         </div> <!-- /container -->
     
-        
-
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
