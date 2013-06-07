@@ -557,10 +557,10 @@ a.kudobject{
     }
 }
 
-
 /* ==========================================================================
 Social button classes
 ========================================================================== */
+
 .btn-facebook {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -790,4 +790,17 @@ Social button classes
 .btn-instagram:active,
 .btn-instagram.active {
   background-color: #305777 \9;
+}
+
+/* ==========================================================================
+Elos apoioadores classes
+========================================================================== */
+
+.apoio-elos {
+    width:100%;
+}
+
+.apoio-elos img {
+    margin: 0px auto;
+    width: 100%;
 }
