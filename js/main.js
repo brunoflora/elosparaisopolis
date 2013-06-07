@@ -80,19 +80,18 @@ var feed = new Instafeed({
 
 function ProjectsController($scope) {
     $scope.projects = [
-        
-        {nome: 'Projeto Balé', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'},
-        {nome: 'Projeto Zica', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'},
-        {nome: 'Projeto Dahr', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'}
 
-        {nome: 'Projeto Balé', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'},
+        
+        // {nome: 'Projeto Balé', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'},
+        // {nome: 'Projeto Zica', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'},
+        // {nome: 'Projeto Dahr', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'}
 
     ];
 
     $scope.adicionaItem = function () {
 
         $scope.projects.push({
-            // img: $scope.project.img,
+            img: $scope.project.img,
             nome: $scope.project.nome,
             author: $scope.project.author,
             contact: $scope.project.contact,
