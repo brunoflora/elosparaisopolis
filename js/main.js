@@ -41,6 +41,32 @@ var marker = new google.maps.Marker({
     title: 'Click para dar zoom'
   });
 
+var marker = new google.maps.Marker({
+    position: google.maps.LatLng(-22.551483,-45.78283),
+    map: map,
+    title: 'Click para dar zoom ESSE EH O 2'
+  });
+
+var markers = [
+      ['Balé Paraisópolis', -23.614938,-46.72432],
+      ['Capoeira Thiago Camilo', -23.61655,-46.727389],
+      ['Orquestra Sinfônica', -23.617592,-46.725586]
+    ];
+
+var infowindow = new google.maps.InfoWindow(), marker, i;
+for (i = 0; i < markers.length; i++) {  
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(markers[i][1], markers[i][2]),
+        map: map
+    });
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+            infowindow.setContent(markers[i][0]);
+            infowindow.open(map, marker);
+        }
+    })(marker, i));
+}
+
 google.maps.event.addListener(map, 'center_changed', function() {
     // 3 seconds after the center of the map has changed, pan back to the
     // marker.
@@ -80,7 +106,12 @@ var feed = new Instafeed({
 
 function ProjectsController($scope) {
     $scope.projects = [
-        {nome: 'Projeto Balé', author: 'Joildo Santos', contact: '(11) 9999-9999', desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'},
+        {
+          nome: 'Projeto Balé', 
+          author: 'Joildo Santos', 
+          contact: '(11) 9999-9999', 
+          desc: '100 crianças na faixa etária de 9 a 12 anos, moradoras de Paraisópolis (São Paulo - SP), aprenderão balé clássico na própria comunidade. O projeto de ensino de dança, totalmente gratuito'
+        },
     ];
 
     $scope.adicionaItem = function () {
