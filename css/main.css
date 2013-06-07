@@ -90,10 +90,11 @@ a:hover { text-decoration: none; color: #9e0c3f; }
 
 .logo-text > h3 {
     letter-spacing: 3px;
-    line-height:20px;
+    line-height:30px;
+    margin: 0;
 }
 
-nav { margin: 30px 0;}
+nav { margin: 47px 0;}
 nav li { display: inline-block; margin-left: 20px; }
 nav li a {  color: #ed1260; font: 16px 'ProximaNovaBold'; }
 
@@ -288,6 +289,8 @@ font-size: 15px;
 .signinmodalwrap textarea {
     width: 278px !important;
 }
+.signinmodalwrap .phead { margin-bottom: 10px; }
+
 
 /*KUDOS - ELOS*/
 
