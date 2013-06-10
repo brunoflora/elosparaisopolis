@@ -235,7 +235,23 @@ section { padding-top: 170px; }
 
 .about { background: #fff url(../img/videoiconbg.png) no-repeat left top; }
 .aboutw p { font-size: 13px; color: #4b4b4b; }
-.who .whopic { display: inline-block; max-width: 220px; }
+.who .whopic { display: inline-block; max-width: 220px; position: relative; }
+.who .whopic .overlay { 
+    width: 220px;
+    height: 220px;
+    display: block;
+    top: -5px;
+    position: absolute;
+}
+.who .whopic:hover .overlay { 
+    background: #ed1260;
+    opacity: 0.4;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
 .who .sharelinks { position: relative; }
 .who .sharelinks ul { 
     list-style: none; 
@@ -244,9 +260,8 @@ section { padding-top: 170px; }
     z-index: 9;
     padding: 5px;
 }
-.who .sharelinks li { display: inline-block; padding-top: 5px;
-margin-left: 20px; }
-
+.who .sharelinks li { display: inline-block; padding-top: 5px; margin-left: 20px; opacity: 0.6; }
+.who .sharelinks li:hover { opacity: 1; }
 
 .who .sharelinks .ficon { 
     background: url(../img/ficon_10_19.png) no-repeat; 
