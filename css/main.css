@@ -80,7 +80,6 @@ textarea {
   max-width: 100%;
   margin: 0 auto;
 }
-
    
 body { font-family: 'ProximaNovaRegular', Helvetica, Arial, sans-serif; }
 
@@ -110,8 +109,9 @@ nav li a {  color: #ed1260; font: 16px 'ProximaNovaBold'; }
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; 
-  height: 453px; 
+  min-height: 453px; 
   margin-top: 66px;
+  overflow: auto;
 }
 .video .play { 
     background: url(../img/videoicon_222_228.png) center no-repeat; 
