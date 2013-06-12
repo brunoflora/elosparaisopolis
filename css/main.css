@@ -843,13 +843,11 @@ Elos apoioadores classes
 
 footer p {
     opacity: .5;
-
 }
 
 /* ==========================================================================
-ChardinJS
+ChardinJS classes
 ========================================================================== */
-
 .chardinjs-overlay {
   position: absolute;
   z-index: 999999;
