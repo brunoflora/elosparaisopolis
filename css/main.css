@@ -849,7 +849,7 @@ footer p {
 /* ==========================================================================
 ChardinJS classes
 ========================================================================== */
-/*.chardinjs-overlay {
+.chardinjs-overlay {
   position: absolute;
   z-index: 999999;
   background-color: #000;
@@ -1018,4 +1018,4 @@ ChardinJS classes
 
 .chardinjs-helper-layer[data-id="links"] .chardinjs-tooltip:after {
   left: 10%;
-}*/
+}
