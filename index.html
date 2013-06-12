@@ -290,10 +290,6 @@
                 <p class="text-center">&copy; Copyleft - Léxico 2013</p>
             </footer>
 
-            <div class ="jumbotron">
-                <a href="#" class="btn primary" data-toggle="chardinjs" data-intro="This button toggles the overlay, you can click it, even when the overlay is visible" data-position="top">Incentivar projeto</a>
-            </div>
-
         </div> <!-- /container -->
     
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -309,38 +305,6 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.reveal.js" type="text/javascript"></script>
-
-        <script>
-        
-        (function() {
-         
-          $(function() {
-            
-            $('body').chardinJs();
-            
-            $('a[data-toggle="chardinjs"]').on('click', function(e) {
-              e.preventDefault();
-              if ($('.jumbotron').is(':visible')) {
-                return ($('body').data('chardinJs')).toggle();
-              } else {
-                return $('.jumbotron').animate({
-                }, function() {
-                  return ($('body').data('chardinJs')).toggle();
-                });
-              }
-            });
-            
-            return $('body').on('chardinJs:stop', function() {
-              $('a.btn.primary').off('click').text('Incentive mais projetos').attr('href', '#');
-              return $('a#opentour').css({
-                display: 'block'
-              });
-            });
-
-          });
-        }).call(this);
-
-        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
