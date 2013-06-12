@@ -279,3 +279,8 @@ $('button').click(function() {
           $.removeCookie(postId);
         });
       });
+
+$('.play').click(function() {
+                $('.play').hide();
+                $('#video').append('<iframe width="1280" height="720" class="iframe" src="http://www.youtube.com/embed/QNstSOucpBU?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+            });
