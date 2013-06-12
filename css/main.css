@@ -74,6 +74,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.iframe {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
    
 body { font-family: 'ProximaNovaRegular', Helvetica, Arial, sans-serif; }
 
@@ -114,7 +121,15 @@ nav li a {  color: #ed1260; font: 16px 'ProximaNovaBold'; }
     display: block;
     padding: 100px 0; 
 }
-
+.video .play:hover { 
+   cursor: pointer;
+    background: url(../img/videoiconplay_222_228.png) center no-repeat;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ; 
+}
 section { padding-top: 170px; }
 
 .title { font: 30px 'ProximaNovaBold'; color: #ed1260; letter-spacing: -1px; margin-bottom: 50px; }
