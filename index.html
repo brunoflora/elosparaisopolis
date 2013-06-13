@@ -82,7 +82,8 @@
                         </div>
                         <div class="txt">
                             <p>Quero apoiar financeiramente ou participar de um projeto.</p>
-                            <a href="#" class="btnelo" data-reveal-id="myModal2">Quero incentivar</a>
+                            <a href="#pesquisa" class="btnelo" data-reveal-id="myModal2" data-toggle="chardinjs">Quero incentivar</a>
+                            <!-- <a href="#" class="btn btn-large primary" data-toggle="chardinjs" data-position="right" data-intro="foo bar" >See it in action</a> -->
                         </div>
                     </div>
                     <div class="box span4">
@@ -101,9 +102,10 @@
 
             <section class="livemap" id="map">
                 <h2 class="title">MAPA DA REGIÃO</h2>
+                <section id="pesquisa"></section>
                 <div id="map_canvas"></div>
                 <div class="row">
-                    <input type="search" class="span12 searchinput" placeholder="ENCONTRE PROJETOS..." ng-model="searchText">
+                    <input type="search" class="span12 searchinput" placeholder="ENCONTRE PROJETOS..." ng-model="searchText" data-position="top" data-intro="foo bar">
                 </div>
             </section>
 
@@ -128,7 +130,7 @@
                     <a class="close-reveal-modal">×</a>
                 </div>
 
-                <div id="myModal2" class="reveal-modal medium">
+                <!-- <div id="myModal2" class="reveal-modal medium">
                     <div class="signinbar">
                         <h1 class="signintitle">Incentivar projeto</h1>
                     </div>
@@ -152,7 +154,7 @@
                         </form>
                     </div>
                     <a class="close-reveal-modal">×</a>
-                </div>
+                </div> -->
 
                 <div id="myModal3" class="reveal-modal medium">
                     <div class="signinbar">
@@ -295,8 +297,6 @@
             <footer>
                 <p class="text-center">&copy; Copyleft - Léxico 2013</p>
             </footer>
-
-            <a href="#" class="btn btn-large primary" data-toggle="chardinjs" data-position="right" data-intro="foo bar" >See it in action</a>
 
         </div> <!-- /container -->
     

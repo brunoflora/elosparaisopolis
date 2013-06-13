@@ -3,6 +3,7 @@
 
 function initialize() {
 
+   // chardinjs
    $('body').chardinJs();
 
    $('a[data-toggle="chardinjs"]').on('click', function(event) {
