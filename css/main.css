@@ -874,13 +874,17 @@ ChardinJS classes
     margin-left: -10px; }
   .chardinjs-helper-layer.chardinjs-right {
     border-right: solid white 1px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    top: 2594px !important; }
   .chardinjs-helper-layer.chardinjs-bottom {
     border-bottom: solid white 1px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    text-align: center; }
   .chardinjs-helper-layer.chardinjs-top {
     border-top: solid white 1px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    top: 2230px !important;
+    text-align: center; }
 
 .chardinjs-tooltip {
   position: absolute;
