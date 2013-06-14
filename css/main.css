@@ -875,11 +875,12 @@ ChardinJS classes
   .chardinjs-helper-layer.chardinjs-right {
     border-right: solid white 1px;
     padding-right: 10px;
-    top: 2594px !important; }
+    top: 2623px !important; }
   .chardinjs-helper-layer.chardinjs-bottom {
     border-bottom: solid white 1px;
     padding-bottom: 10px;
-    text-align: center; }
+    text-align: center;
+    top: 2070px !important; }
   .chardinjs-helper-layer.chardinjs-top {
     border-top: solid white 1px;
     padding-top: 10px;

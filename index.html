@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" ng-app> <!--<![endif]-->
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Elos Paraisopolis</title>
@@ -39,11 +40,11 @@
                 </a>
                 <nav class="pull-right">
                     <ul>
-                        <li><a href="#aboutp" >SOBRE</a></li>
-                        <li><a href="#howitworks" >COMO FUNCIONA</a></li>
-                        <li><a href="#map" >MAPA DA REGIÃO</a></li>
-                        <li><a href="#pics" >MOSTRE A SUA REALIDADE</a></li>
-                        <li><a href="#whoa" >QUEM SOMOS</a></li>
+                        <li><a class="anchor" href="#aboutp" >SOBRE</a></li>
+                        <li><a class="anchor" href="#howitworks" >COMO FUNCIONA</a></li>
+                        <li><a class="anchor" href="#map" >MAPA DA REGIÃO</a></li>
+                        <li><a class="anchor" href="#pics" >MOSTRE A SUA REALIDADE</a></li>
+                        <li><a class="anchor" href="#whoa" >QUEM SOMOS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,7 +83,7 @@
                         </div>
                         <div class="txt">
                             <p>Quero apoiar financeiramente ou participar de um projeto.</p>
-                            <a href="#pesquisa" class="btnelo" data-reveal-id="myModal2" data-toggle="chardinjs">Quero incentivar</a>
+                            <a href="#pesquisa" class="btnelo anchor" data-reveal-id="myModal2" data-toggle="chardinjs">Quero incentivar</a>
                             <!-- <a href="#" class="btn btn-large primary" data-toggle="chardinjs" data-position="right" data-intro="foo bar" >See it in action</a> -->
                         </div>
                     </div>
@@ -94,7 +95,7 @@
                         </div>
                         <div class="txt">
                             <p>Quero divulgar um projeto na comunidade de Paraisópolis.</p>
-                            <a href="#" class="btnelo" data-reveal-id="myModal3">Quero compartilhar</a>
+                            <a href="#" class="btnelo" data-reveal-id="myModal3" data-toggle="chardinjs">Quero compartilhar</a>
                         </div>
                     </div>
                 </div>
@@ -105,12 +106,12 @@
                 <div id="map_canvas"></div>
                 <div class="row">
                     <section id="pesquisa"></section>
-                    <input type="search" class="span12 searchinput" placeholder="ENCONTRE PROJETOS..." ng-model="searchText" data-position="top" data-intro="Pesquise ou visualize abaixo pelos projetos.">
+                    <input type="search" class="span12 searchinput" placeholder="ENCONTRE PROJETOS..." ng-model="searchText" data-position="top" data-intro="Pesquise ou visualize abaixo os projetos.">
                 </div>
             </section>
 
             <section class="projects">
-                
+
             <div class="comments-wrapper" ng-controller="ProjectsController">
 
                 <div id="myModal" class="reveal-modal medium">
@@ -156,7 +157,7 @@
                     <a class="close-reveal-modal">×</a>
                 </div> -->
 
-                <div id="myModal3" class="reveal-modal medium">
+                <!-- <div id="myModal3" class="reveal-modal medium">
                     <div class="signinbar">
                         <h1 class="signintitle">Compartilhar projeto</h1>
                     </div>
@@ -169,7 +170,7 @@
                         </form>
                     </div>
                     <a class="close-reveal-modal">×</a>
-                </div>
+                </div> -->
 
                 <div class="row">
                     <div class="projectbox span3" ng-repeat="project in projects | filter:searchText">
@@ -192,11 +193,17 @@
                                         <span class="txt">Elos</span>
                                     </a>                                
                                 </figure>                            
+                            </div><!-- AddThis Button BEGIN -->
+                            <div class="addthis_toolbox addthis_default_style">
+                                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                                <a class="addthis_button_tweet"></a>
                             </div>
+                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=undefined"></script>
+                            <!-- AddThis Button END -->
                             <a href="#" class="btnelo" data-reveal-id="projectModal" data-position="right" data-intro="Entre em contato com o projeto que você deseja incentivar.">ENTRAR EM CONTATO</a>     
                         </div> 
                         <div id="projectModal" class="reveal-modal medium">                            
-                                <div class="signinbar">                                
+                                <div class="signinbar">
                                     <h4 class="signintitle">{{ project.nome }}</h4>          
                                 </div>                            
                                 <div class="signinmodalwrap">                                
